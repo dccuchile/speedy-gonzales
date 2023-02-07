@@ -1,4 +1,4 @@
-# Code
+# Code
 
 In this directory we found some outputs of the project (figures, logs), notebooks used and proper code. Some subdirs contains readmes with further information.
 
