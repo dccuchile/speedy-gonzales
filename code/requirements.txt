@@ -1,0 +1,11 @@
+# torch==1.13.0+cu116
+transformers==4.25.1
+pandas
+plotly
+nbformat>=4.2.0
+thop
+tqdm
+evaluate
+optuna
+datasets
+scikit-learn
