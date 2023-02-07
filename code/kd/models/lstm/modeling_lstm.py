@@ -203,32 +203,6 @@ class BiLSTMForSequenceClassification(BiLSTMPreTrainedModel):
             inputs_embeds=inputs_embeds,
         )
 
-        # batch_size = x.shape[0]
-        # seq_len = x.shape[1]
-
-        # print(x)
-        # print(x.shape)
-        # print(x.view(batch_size, seq_len, 2, -1))
-        # forward_lstm = x.view(batch_size, seq_len, 2, -1)[:, :, 0, :]
-        # backward_lstm = x.view(batch_size, seq_len, 2, -1)[:, :,1, :]
-        # print(f'forward {forward_lstm}')
-        # print(f'forward shape {forward_lstm.shape}')
-        # print(f'backward {backward_lstm}')
-        # print(f'backward shape {backward_lstm.shape}')
-        # last_forward = forward_lstm[:,-1,:]
-        # print(f'last forward {last_forward}')
-        # print(f'last forward shape {last_forward.shape}')
-        # last_backward = backward_lstm[:,-1,:]
-        # print(f'last backward {last_backward}')
-        # print(f'last backward shape {last_backward.shape}')
-        # first_backward = backward_lstm[:,0,:]
-        # print(f'first backward {first_backward}')
-        # print(f'first backward shape {first_backward.shape}')
-
-        # last_bidirectional = torch.cat((last_forward, first_backward), dim=1)
-        # print(f'last bidir {last_bidirectional}')
-        # print(x[:,-1, :])
-
         x = torch.mean(x, dim=1)
         logits = self.classifier(x)
 
