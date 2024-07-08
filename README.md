@@ -342,3 +342,28 @@
   </tr>
 </tbody>
 </table>
+
+
+# Citation
+
+[Speedy Gonzales: A Collection of Fast Task-Specific Models for Spanish](https://aclanthology.org/2024.starsem-1.14/)
+
+To cite this resource in a publication please use the following:
+
+```
+@inproceedings{canete-bravo-marquez-2024-speedy,
+    title = "Speedy Gonzales: A Collection of Fast Task-Specific Models for {S}panish",
+    author = "Ca{\~n}ete, Jos{\'e}  and
+      Bravo-Marquez, Felipe",
+    editor = "Bollegala, Danushka  and
+      Shwartz, Vered",
+    booktitle = "Proceedings of the 13th Joint Conference on Lexical and Computational Semantics (*SEM 2024)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.starsem-1.14",
+    pages = "176--189",
+    abstract = "Large language models (LLM) are now a very common and successful path to approach language and retrieval tasks. While these LLM achieve surprisingly good results it is a challenge to use them on more constrained resources. Techniques to compress these LLM into smaller and faster models have emerged for English or Multilingual settings, but it is still a challenge for other languages. In fact, Spanish is the second language with most native speakers but lacks of these kind of resources. In this work, we evaluate all the models publicly available for Spanish on a set of 6 tasks and then, by leveraging on Knowledge Distillation, we present Speedy Gonzales, a collection of inference-efficient task-specific language models based on the ALBERT architecture. All of our models (fine-tuned and distilled) are publicly available on: https://huggingface.co/dccuchile.",
+}
+ ```
